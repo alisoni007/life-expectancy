@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Life Expectancy for Political Candidates",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "candidates.html",
+    "href": "candidates.html",
+    "title": "Life Expectancy for Political Candidates",
+    "section": "",
+    "text": "Age and longevity are common concerns in both public health and political life. Using a dataset of U.S. governors that includes information on over 1,000 candidates from various states and years, we examine how a candidate’s age at election relates to how long they live after the election.However, our model may be limited by changes in healthcare over time, which could affect the stability of the relationship between election age and post-election longevity.We model post-election longevity, measured in years lived after the election, as a linear function of sex, age at election, and their interaction.\n\\[Y = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\cdots + \\beta_n X_n + \\epsilon\\]\nwith \\(\\epsilon \\sim \\mathcal{N}(0, \\sigma^2)\\).\n\\[\\widehat{\\text{att_end}} = 8.45 + 1.55 \\cdot \\text{treatment}_{\\text{Treated}}\\]\n\n\n\n\n\n\n\n\nLinear Model Results for lived_after\n\n\nIncluding sex, election_age, and their interaction\n\n\nTerm\nEstimate\nStd. Error\nt value\np-value\n95% CI Lower\n95% CI Upper\n\n\n\n\n(Intercept)\n47.431\n19.794\n2.396\n0.017\n8.623\n86.239\n\n\nsexMale\n11.046\n19.813\n0.557\n0.577\n−27.801\n49.892\n\n\nelection_age\n−0.492\n0.341\n−1.442\n0.149\n−1.162\n0.177\n\n\nsexMale:election_age\n−0.189\n0.342\n−0.554\n0.579\n−0.860\n0.481\n\n\n\n\n\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 7 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 7 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  }
+]
